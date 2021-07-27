@@ -1,11 +1,11 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
-import PrismicScript from '../components/PrismicScript'
-import { reset, globals } from 'styles'
+import Document, { Html, Head, Main, NextScript } from "next/document";
+import PrismicScript from "../components/PrismicScript";
+import { reset, globals } from "styles";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps }
+    const initialProps = await Document.getInitialProps(ctx);
+    return { ...initialProps };
   }
 
   render() {
@@ -17,7 +17,6 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
             rel="stylesheet"
           />
-          <link rel="icon" href="/favicon.png" type="image/png" />
         </Head>
         <body>
           <Main />
@@ -25,8 +24,8 @@ class MyDocument extends Document {
           <PrismicScript />
         </body>
       </Html>
-    )
+    );
   }
 }
 
-export default MyDocument
+export default MyDocument;
