@@ -8,8 +8,8 @@ export const headerStyles = css.global`
   }
 
   .blog-avatar {
-    height: 140px;
-    width: 140px;
+    height: 70px;
+    width: 70px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
